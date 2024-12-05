@@ -25,7 +25,7 @@ def main():
     while is_running:
         display_man(wrong_guesses)
         display_hint(hint)
-        guess = input("Type in your guess: ")
+        guess = input("Type in your guess: ").lower()
 
         if len(guess) != 1 or not guess.isalpha():
             print(
